@@ -2,38 +2,35 @@
     padding: 0;
     margin: 0;
     border: none;
+    font-family: 微软雅黑；
 }
 
 /*hearder start*/
 .header {
     height: 110px;
-    background-color: #fff;
 }
 
 .main {
     height: 110px;
-    width: 1008px;
+    width: 1003px;
     margin: 0 auto;
-    background: #000;
 }
 
 .logo {
     float: left;
-    height: 110px;
-    width: 110px;
-    background-color: red;
+    line-height: 110px;
+/*    padding-top: 19px;*/
 }
 
 .nav {
-    width: 660px;
+    width: 542px;
     height: 110px;
-    float: left;
+    float: right;
     margin-left: 238px;
 }
 
 .nav li {
     display: block;
-    width: 100px;
     height: 110px;
     float: left;
 }
@@ -45,12 +42,13 @@
     line-height: 110px;
     width: 100px;
     height: 110px;
+    font-size: 20px;
+    color: #000;
 }
 /*header end*/
 /*banner start*/
 .banner {
     height:400px;
-    background-color: green;
 }
 /*banner end*/
 /*footer start*/
