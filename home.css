@@ -256,4 +256,10 @@ body {
     display: block;
     color: #fff;
 }
+
+#front {
+    width: 1003px;
+    height: auto;
+    margin-top: 50px;
+}
 /*privacy-page end*/
