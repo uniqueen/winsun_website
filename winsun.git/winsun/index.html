@@ -1,0 +1,89 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="http://unslider.com/unslider.js"></script>
+    <script>
+    $(document).ready(function() {
+        $(function() {
+            $('.banner').unslider({
+                speed: 500, //  The speed to animate each slide (in milliseconds)
+                delay: 3000, //  The delay between slide animations (in milliseconds)
+                complete: function() {}, //  A function that gets called after every slide animation
+                keys: true, //  Enable keyboard (left, right) arrow shortcuts
+                dots: true, //  Display dot navigation
+                fluid: true //  Support responsive design. May break non-responsive designs
+            });
+        });
+    });
+    </script>
+    <title>winsun</title>
+</head>
+
+<body>
+    <!-- header start -->
+    <div class="header-view">
+        <div class="header-content">
+            <a href="" class="logo-header"><img src="images/logo-05.jpg" alt=""></a>
+            <div class="nav-header">
+                <ul>
+                    <li><a href="">首页</a></li>
+                    <li><a href="">产品信息</a>
+                        <div class="sub-menu">
+                            <a href=""><img src="images/xiaoshou.jpg" alt=""></a>
+                            <a href=""><img src="images/sheji.jpg" alt=""></a>
+                            <a href=""><img src="images/jishu.jpg" alt=""></a>
+                        </div>
+                    </li>
+                    <li><a href="">产品信息</a>
+                        <div class="sub-menu">
+                            <a href=""><img src="images/xiaoshou.jpg" alt=""></a>
+                            <a href=""><img src="images/sheji.jpg" alt=""></a>
+                            <a href=""><img src="images/jishu.jpg" alt=""></a>
+                        </div>
+                    </li>
+                    <li><a href="">产品信息</a></li>
+                    <li><a href="">产品信息</a>
+                        <div class="sub-menu">
+                            <a href=""><img src="images/xiaoshou.jpg" alt=""></a>
+                            <a href=""><img src="images/sheji.jpg" alt=""></a>
+                            <a href=""><img src="images/jishu.jpg" alt=""></a>
+                        </div>
+                    </li>
+                    <li><a href="">产品信息</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- header end -->
+    <!-- banner start -->
+    <div class="banner">
+        <ul>
+            <li><img src="images/banner1.jpg" alt=""></li>
+            <li><img src="images/banner2.jpg" alt=""></li>
+        </ul>
+    </div>
+    <!-- banner end -->
+    <!-- footer start -->
+    <!-- footer start -->
+    <div class="footer-view">
+        <div class="footer-content">
+            <ul class="footer-menu">
+                <li>
+                    <a href=""><img src="" alt=""></a>
+                </li>
+                <li>
+                    <a href=""></a>
+                    <a href=""></a>
+                    <a href=""></a>
+                </li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+    <!-- footer end -->
+</body>
+
+</html>
