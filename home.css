@@ -430,5 +430,20 @@ body {
     color: blue;
     font-size: 14px;
 }
+/*下载结束*/
+
+/*产品图片开始*/
+.product-pic li {
+    width: 500px;
+    height: 500px;
+    background-color: #cccccc;
+    margin-top: 30px;
+}
+
+.product-pic ul {
+    list-style: none;
+}
+/*产品图片结束*/
+
 /*udisk-32 nav end*/
 /*udisk-32 end*/
