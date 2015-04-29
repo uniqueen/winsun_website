@@ -76,7 +76,8 @@ body {
 /*header end*/
 /*banner start*/
 .banner {
-    height: 704px;
+    height: auto;
+    width: 100%
 }
 /*banner end*/
 /*footer start*/
