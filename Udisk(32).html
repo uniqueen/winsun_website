@@ -6,20 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>上海闻上信息科技有限公司</title>
     <link rel="stylesheet" href="home.css">
-    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="http://unslider.com/unslider.js"></script>
+    <script src="js/lib/jquery-latest.min.js"></script>
+    <script src="js/lib/easytabs.min.js"></script>
     <script>
-        $(document).ready(function () {
-            $(function () {
-                $('.banner').unslider({
-                    speed: 500, //  The speed to animate each slide (in milliseconds)
-                    delay: 3000, //  The delay between slide animations (in milliseconds)
-                    complete: function () {}, //  A function that gets called after every slide animation
-                    keys: true, //  Enable keyboard (left, right) arrow shortcuts
-                    dots: true, //  Display dot navigation
-                    fluid: true //  Support responsive design. May break non-responsive designs
-                });
-            });
+        jQuery(document).ready(function ($) {
+            $('#tab-container1').easytabs();
         });
     </script>
 </head>
@@ -97,43 +88,122 @@
             <div class="udisk-right">
                 <p>Inforcube轻盈OTG双插头两用U盘</p>
                 <ul class="rongliang">
-                    <li class="item">
+                    <li>
                         <a href="">16G</a>
                     </li>
-                    <li class="item">
+                    <li>
                         <a href="">32G</a>
                     </li>
-                    <li class="item">
+                    <li>
                         <a href="">64G</a>
                     </li>
-                    <li class="item">
+                    <li>
                         <a href="">128G</a>
                     </li>
                 </ul>
                 <ul class="color">
-                    <li class="item">
+                    <li>
                         <a href="">
                             <img src="">明蓝</a>
                     </li>
-                    <li class="item">
+                    <li>
                         <a href="">
                             <img src="">幽黑</a>
                     </li>
                 </ul>
-                 <ul class="buy">
-                    <li class="item">
+                <ul class="buy">
+                    <li>
                         <a href="">
-                            <img src=""></a>
+                            <img src="">
+                        </a>
                     </li>
-                    <li class="item">
+                    <li>
                         <a href="">
-                            <img src=""></a>
+                            <img src="">
+                        </a>
                     </li>
                 </ul>
             </div>
         </div>
     </div>
     <!--    banner end-->
+    <!--   content start -->
+    <div id="tab-container1" class="tab-container1">
+        <ul class='nav-tabs1'>
+            <li class='tab'><a href="#product">产品概述</a>
+            </li>
+            <li class='tab'><a href="#picture">产品图片</a>
+            </li>
+            <li class='tab'><a href="#parameter">参数规格</a>
+            </li>
+            <li class='tab'><a href="#problem">常见问题</a>
+            </li>
+            <li class='tab'><a href="#download">相关下载</a>
+            </li>
+        </ul>
+
+        <!--产品概述开始-->
+        <div id="product">
+            <h1>手机/电脑两用U盘</h1>
+            <h3>一体两用 跨界通行</h3>
+            <p>15U032M+1是双USB接口设计，打破了WIFI的环境限制，告别了蓝牙传输的漫长等待，一插一拔，迅速完成不同终端设备之间的数据共享。分享时刻，你只需要把它交给朋友，插入手机或者平板电脑，简单的复制粘贴，瞬间分享海量照片、音乐与视频！</p>
+            <div class="udisk-image">
+                <img src="images/shuangchatou.jpg">
+            </div>
+            <h1>极致工艺 超凡脱俗</h1>
+            <h3>色彩与金属的结合</h3>
+            <p>独具匠心的伸缩式接口设计，可以双向滑动。你只需要用双指轻捏盖帽上的防滑纹，再将机身向前推可立现Micro USB接口，向后拉则将其隐藏。这样的人性化设计，不仅能有效保护接口，更可以避免盖帽丢失。重要的是，操作步骤也变得更简单，使用起来也更方便</p>
+            <div class="udisk-image">
+                <img src="images/caizhi.jpg">
+            </div>
+            <h1>安全专家</h1>
+            <h3>给移动数据找一个安全的家</h3>
+            <p>稳定存储技术，有效防止数据丢失，符合U-SAFE标准，打造安全可靠的存储环境；InforCube移动数据保险箱采用AES256位加密算法，防止内部信息外泄，兼容Windows7、Windows8有效保护您的数据安全！</p>
+            <div class="udisk-image">
+                <img src="images/jiami.jpg">
+            </div>
+            <h1>数据极速传输</h1>
+            <h3>USB3.0更快更高速</h3>
+            <p>15U032M+1搭载USB3.0接口，完全符合主流电脑的标准配置。您的Office文档、图片、音乐、视频等文件，都可以由它来妥善保管。从传输到存储，一起都以超高速进行。它向下兼容USB2.0接口，甚至传输速度有10倍的提升！</p>
+            <div class="udisk-image">
+                <img src="images/sudu1.jpg">
+            </div>
+            <h1>数据极速传输</h1>
+            <h3>USB3.0更快更高速</h3>
+            <p>15U032M+1搭载USB3.0接口，完全符合主流电脑的标准配置。您的Office文档、图片、音乐、视频等文件，都可以由它来妥善保管。从传输到存储，一起都以超高速进行。它向下兼容USB2.0接口，甚至传输速度有10倍的提升！</p>
+            <div class="udisk-image">
+                <img src="images/qing.jpg">
+            </div>
+        </div>
+        <!--产品概述结束-->
+
+        <!--产品图片开始-->
+
+        <div id="picture">
+            2
+        </div>
+        <!--产品图片结束 -->
+
+        <!--规格参数开始-->
+        <div id="parameter">
+            3
+        </div>
+        <!--规格参数结束-->
+        <div id="problem">
+            4
+        </div>
+        <!--下载中心开始 -->
+        <div id="download">
+            <ul>
+                <li><a href="">移动数据保险箱秘钥下载</a>
+                </li>
+                <li><a href="">移动数据保险箱使用说明书</a>
+                </li>
+            </ul>
+        </div>
+        <!--下载结束-->
+    </div>
+    <!--content end-->
     <!--footer start-->
     <div class="footer">
         <div class="foot_left">
