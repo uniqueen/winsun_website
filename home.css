@@ -82,12 +82,6 @@ body {
     overflow: hidden;
 }
 
-.banner img {
-    width: 100% !important;
-    position: relative;
-    overflow: hidden;
-}
-
 .banner ul li {
     float: left;
     list-style: none;
@@ -96,11 +90,33 @@ body {
     width: 100%;
     height: auto;
 }
+
+.banner-ex {
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-ex ul li img {
+    width: 100%;
+    height: auto;
+}
+
+.return-button {
+    width: 100%;
+    height: auto;
+}
+
+.return-button img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
 /*banner end*/
 /*footer start*/
 .footer {
     height: 120px;
-/*    width: 1003px;*/
     margin: 0 auto;
     padding-top: 34px;
 }
