@@ -104,14 +104,21 @@ body {
 }
 
 .return-button {
-    width: 100%;
-    height: auto;
+    background-color: #19b5bb;
+    border: 1px #19b5bb solid;
+    border-radius: 12px;
+    width: 240px;
+    height: 56px;
+    margin: 0 auto;
 }
 
-.return-button img {
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
+.return-button a {
+    text-decoration: none;
+    font-size: 36px;
+    color: #fff;
+    text-align: center;
+    line-height: 56px;
+    display: block;
 }
 /*banner end*/
 /*footer start*/
@@ -127,6 +134,7 @@ body {
 .footer  {
     width: 1000px;
     margin: 0 auto
+
 }
 
 .foot_left {
@@ -207,3 +215,45 @@ body {
 
 
 /*footer end*/
+
+
+
+/*privacy-page start*/
+.tab-container {
+    width: 1003px;
+    height: 35px;
+    margin: 0 auto;
+    margin-top: 55px;
+}
+
+.nav-tabs {
+    list-style: none;
+    height: 35px;
+    margin: 0 auto;
+}
+
+.nav-tabs li {
+    height: 35px;
+    width: 135px;
+    background-color: #cacaca;
+    margin-right: 20px;
+    float: left;
+}
+
+.nav-tabs li:hover {
+    background-color: #1bc0c6;
+}
+
+.nav-tabs a:visited {
+    background-color: red;
+}
+
+.nav-tabs a {
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+    line-height: 35px;
+    display: block;
+    color: #fff;
+}
+/*privacy-page end*/
