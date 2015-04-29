@@ -221,7 +221,6 @@ body {
 /*privacy-page start*/
 .tab-container {
     width: 1003px;
-    height: 35px;
     margin: 0 auto;
     margin-top: 55px;
 }
@@ -261,5 +260,87 @@ body {
     width: 1003px;
     height: auto;
     margin-top: 50px;
+    font-size: 15px;
+    color: #666;
+    line-height: 24px;
+    text-align: justify;
+}
+
+#tradition {
+        width: 1003px;
+    height: auto;
+    margin-top: 50px;
+    font-size: 15px;
+    color: #666;
+    line-height: 24px;
+    text-align: justify;
+}
+
+#new {
+         width: 1003px;
+    height: auto;
+    margin-top: 50px;
+    font-size: 15px;
+    color: #666;
+    line-height: 24px;
+    text-align: justify;
 }
 /*privacy-page end*/
+
+/*udisk-32start*/
+.udisk-banner {
+    height: 490px;
+    background-color: #e6f2f2;
+}
+
+.udisk-32 {
+    width: 1003px;
+    margin: 0 auto;
+    height: 490px;
+}
+
+.item {
+    width:112px;
+    height:42px;
+    float: left;
+    border: 2px #fff solid;
+    margin-right: 20px;
+    margin-top: 20px;
+    background-color: #fff;
+}
+
+.item a {
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    line-height: 42px;
+    font-size: 18px;
+}
+
+.udisk-left img {
+    background-color: red;
+    width: 370px;
+    height: 370px;
+}
+
+.udisk-left {
+    width: 500px;
+    padding-top: 50px;
+}
+
+.udisk-right {
+/*    width: 544px;*/
+    float: right;
+    margin-top: -284px;
+}
+
+.udisk-right ul {
+    list-style: none;
+}
+
+.color {
+    width: 544px;
+    height: 42px;
+}
+
+/*udisk-32 end*/
