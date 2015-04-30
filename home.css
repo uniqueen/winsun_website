@@ -305,7 +305,7 @@ body {
     display: block;
 }
 
-#front {
+.front {
     width: 1003px;
     height: auto;
     margin-top: 50px;
@@ -315,7 +315,7 @@ body {
     text-align: justify;
 }
 
-#tradition {
+.tradition {
     width: 1003px;
     height: auto;
     margin-top: 50px;
@@ -325,7 +325,7 @@ body {
     text-align: justify;
 }
 
-#new {
+.new {
     width: 1003px;
     height: auto;
     margin-top: 50px;
@@ -405,20 +405,21 @@ body {
     border-bottom: 1px #ccc solid;
 }
 
-.nav-tabs1 li {
+.nav-tabs li {
     /*    height: 35px;*/
 
     margin-right: 80px;
     float: left;
 }
 
-.nav-tabs1 a {
+.nav-tabs span {
     text-decoration: none;
     font-size: 18px;
     text-align: center;
     line-height: 35px;
     display: block;
     color: #333;
+    cursor: pointer;
 }
 /*äº§å“æ¦‚è¿°å¼€å§‹*/
 

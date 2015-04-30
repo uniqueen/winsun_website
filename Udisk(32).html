@@ -9,19 +9,19 @@
     <script src="js/lib/jquery-latest.min.js"></script>
     <script src="js/lib/easytabs.min.js"></script>
     <script>
-    jQuery(document).ready(function($) {
-        $('.nav-tabs li:first-child').addClass('active-tab')
-        $('.tab-content-box .tab-content').css('display', 'none');
-        $('.tab-content-box .tab-content:first-child').css('display', 'block');
-        $('.nav-tabs li span').click(function() {
-            tabName = "." + $(this).attr('class');
-            console.log(tabName);
-            $('.nav-tabs li').removeClass('active-tab');
-            $(this).offsetParent().addClass('active-tab');
-            $('.tab-content-box .tab-content').hide('slow');
-            $('.tab-content-box').children(tabName).show('slow');
+        jQuery(document).ready(function ($) {
+            $('.nav-tabs li:first-child').addClass('active-tab')
+            $('.tab-content-box .tab-content').css('display', 'none');
+            $('.tab-content-box .tab-content:first-child').css('display', 'block');
+            $('.nav-tabs li span').click(function () {
+                tabName = "." + $(this).attr('class');
+                console.log(tabName);
+                $('.nav-tabs li').removeClass('active-tab');
+                $(this).offsetParent().addClass('active-tab');
+                $('.tab-content-box .tab-content').hide('slow');
+                $('.tab-content-box').children(tabName).show('slow');
+            });
         });
-    });
     </script>
 </head>
 
@@ -39,10 +39,19 @@
                     <li><a href="">首页</a>
                     </li>
                     <li><a href="">产品信息</a>
-                        <ul class="subnav">
-                            <li>
+                        <div class="subnav">
+                            <i class="icon-subnav"><img src="images/subnav.jpg" alt=""></i>
+                            <ul>
+                                <li><a href="">技术类</a><img src="images/xbox.jpg" alt="">
+                                </li>
+                                <li><a href="">设计类</a><img src="images/suface.jpg" alt="">
+                                </li>
+                                <li><a href="">销售类</a><img src="" alt="">
+                                </li>
+                                <!--                             <li>
                                 <a href="">
-                                    <img src="images/jishu.jpg" </a>
+                                    <img src="images/jishu.jpg">
+                                </a>
                             </li>
                             <li>
                                 <a href="">
@@ -53,16 +62,26 @@
                                 <a href="">
                                     <img src="images/xiaoshou.jpg">
                                 </a>
-                            </li>
-                        </ul>
+                            </li> -->
+                            </ul>
+                        </div>
                     </li>
                     <li><a href="">技术支持</a>
                     </li>
                     <li><a href="">关于闻上</a>
-                        <ul class="subnav">
-                            <li>
+                        <div class="subnav">
+                            <i class="icon-subnav"><img src="images/subnav.jpg" alt=""></i>
+                            <ul>
+                                <li><a href="">技术类</a><img src="images/xbox.jpg" alt="">
+                                </li>
+                                <li><a href="">设计类</a><img src="images/suface.jpg" alt="">
+                                </li>
+                                <li><a href="">销售类</a><img src="" alt="">
+                                </li>
+                                <!--                             <li>
                                 <a href="">
-                                    <img src="images/jishu.jpg" </a>
+                                    <img src="images/jishu.jpg">
+                                </a>
                             </li>
                             <li>
                                 <a href="">
@@ -73,12 +92,10 @@
                                 <a href="">
                                     <img src="images/xiaoshou.jpg">
                                 </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="images/qita.jpg" </a>
-                            </li>
-                        </ul>
+                            </li> -->
+                            </ul>
+                        </div>
+
                     </li>
                     <li><a href="">招贤纳士</a>
                     </li>
@@ -190,10 +207,14 @@
             <div class="picture tab-content">
                 <div class="product-pic">
                     <ul>
-                        <li><img src=""></li>
-                        <li><img src=""></li>
-                        <li><img src=""></li>
-                        <li><img src=""></li>
+                        <li><img src="">
+                        </li>
+                        <li><img src="">
+                        </li>
+                        <li><img src="">
+                        </li>
+                        <li><img src="">
+                        </li>
                     </ul>
                 </div>
             </div>
