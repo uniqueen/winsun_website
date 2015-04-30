@@ -56,8 +56,6 @@ body {
 
 .subnav {
     position: absolute;
-    /*    top: 63px;*/
-
     display: none;
     margin-left: -200px;
     height: 320px;
@@ -98,8 +96,8 @@ body {
 }
 
 .subnav ul a:hover {
-    background: green;
-    color: #ffffff
+    background: #1bc0c6;
+    color: #ffffff;
 }
 
 .subnav li img {
@@ -274,7 +272,8 @@ body {
     list-style: none;
     height: 35px;
     margin: 0 auto;
-    border-bottom: 1px #ccc solid;
+
+    /* border-bottom: 1px #ccc solid; */
 }
 
 .nav-tabs li {
@@ -283,6 +282,7 @@ body {
     background-color: #cacaca;
     margin-right: 10px;
     float: left;
+    font-size: 18px;
 }
 
 
@@ -302,6 +302,7 @@ body {
     display: block;
 }
 
+/*
 .front {
     width: 1003px;
     height: auto;
@@ -310,6 +311,11 @@ body {
     color: #666;
     line-height: 24px;
     text-align: justify;
+}
+
+.front p {
+    font-size: 15px;
+    color: #666;
 }
 
 .tradition {
@@ -331,13 +337,28 @@ body {
     line-height: 24px;
     text-align: justify;
 }
+*/
+
+.tab-content-box {
+    width: 1003px;
+    height: auto;
+    margin-top: 50px;
+    font-size: 15px;
+    color: #666;
+    line-height: 24px;
+    text-align: justify;
+}
+.nav-tabs li {
+    font-size: 18px;
+}
 
 .nav-tabs span {
     text-decoration: none;
     text-align: center;
     line-height: 35px;
-    color: #333;
     cursor: pointer;
+    display: block;
+    color: #fff;
 }
 
 /*privacy-page end*/
@@ -363,7 +384,7 @@ body {
 
 .udisk-left {
     width: 500px;
-    padding-top: 50px;
+    padding-top: 65px;
 }
 
 .rongliang li {

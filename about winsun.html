@@ -10,7 +10,19 @@
     <script src="js/lib/easytabs.min.js"></script>
     <script>
         jQuery(document).ready(function ($) {
-            $('#tab-container').easytabs();
+            $('.nav-tabs li:first-child').addClass('active-tab')
+            $('.tab-content-box .tab-content').css('display', 'none');
+            $('.tab-content-box .tab-content:first-child').css('display', 'block');
+            $('.nav-tabs li span').click(function () {
+                tabName = "." + $(this).attr('class');
+                console.log(tabName);
+                $('.nav-tabs li').removeClass('active-tab');
+                $(this).offsetParent().addClass('active-tab');
+                //                $('.tab-content-box .tab-content').hide('fast');
+                //                $('.tab-content-box').children(tabName).show('fast');
+                $('.tab-content-box .tab-content').css('display', 'none');
+                $('.tab-content-box').children(tabName).css('display', 'block');
+            });
         });
     </script>
 </head>
@@ -29,10 +41,22 @@
                     <li><a href="">首页</a>
                     </li>
                     <li><a href="">产品信息</a>
-                        <ul class="subnav">
-                            <li>
+                        <div class="subnav">
+                            <i class="icon-subnav"><img src="images/subnav.jpg" alt=""></i>
+                            <ul>
+                                <li><a href="">技术类</a>
+                                    <img src="images/xbox.jpg" alt="">
+                                </li>
+                                <li><a href="">设计类</a>
+                                    <img src="images/suface.jpg" alt="">
+                                </li>
+                                <li><a href="">销售类</a>
+                                    <img src="" alt="">
+                                </li>
+                                <!--                             <li>
                                 <a href="">
-                                    <img src="images/jishu.jpg" </a>
+                                    <img src="images/jishu.jpg">
+                                </a>
                             </li>
                             <li>
                                 <a href="">
@@ -43,16 +67,29 @@
                                 <a href="">
                                     <img src="images/xiaoshou.jpg">
                                 </a>
-                            </li>
-                        </ul>
+                            </li> -->
+                            </ul>
+                        </div>
                     </li>
                     <li><a href="">技术支持</a>
                     </li>
                     <li><a href="">关于闻上</a>
-                        <ul class="subnav">
-                            <li>
+                        <div class="subnav">
+                            <i class="icon-subnav"><img src="images/subnav.jpg" alt=""></i>
+                            <ul>
+                                <li><a href="">技术类</a>
+                                    <img src="images/xbox.jpg" alt="">
+                                </li>
+                                <li><a href="">设计类</a>
+                                    <img src="images/suface.jpg" alt="">
+                                </li>
+                                <li><a href="">销售类</a>
+                                    <img src="" alt="">
+                                </li>
+                                <!--                             <li>
                                 <a href="">
-                                    <img src="images/jishu.jpg" </a>
+                                    <img src="images/jishu.jpg">
+                                </a>
                             </li>
                             <li>
                                 <a href="">
@@ -63,12 +100,10 @@
                                 <a href="">
                                     <img src="images/xiaoshou.jpg">
                                 </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="images/qita.jpg" </a>
-                            </li>
-                        </ul>
+                            </li> -->
+                            </ul>
+                        </div>
+
                     </li>
                     <li><a href="">招贤纳士</a>
                     </li>
@@ -82,30 +117,33 @@
     <!--tab start-->
     <div id="tab-container" class="tab-container">
         <ul class='nav-tabs'>
-            <li class='tab'><a href="#mission">闻上使命</a>
+            <li class='tab'><span class="mission">闻上使命</span>
             </li>
-            <li class='tab'><a href="#road">闻上之路</a>
+            <li class='tab'><span class="road">闻上之路</span>
             </li>
-            <li class='tab'><a href="#cultural">企业文化</a>
+            <li class='tab'><span class="cultural">企业文化</span>
             </li>
-            <li class='tab'><a href="#contact">联系我们</a>
+             <li class='tab'><span class="contact">企业文化</span>
             </li>
         </ul>
-       
-        <div id="mission">
-            闻上使命
+        <div class="tab-content-box">
+
+            <div class="mission tab-content">
+               1
+            </div>
+
+            <div class="road tab-content">
+2
+            </div>
+  
+            <div class="cultural tab-content">
+3
+            </div>
+              <div class="contact tab-content">
+4
+            </div>
         </div>
-        <div id="road">
-            闻上之路
-        </div>
-       
-        <div id="cultural">
-            企业文化
-        </div>
-        
-        <div id="contact">
-            联系我们
-        </div>
+  
     </div>
     <!--tab end-->
     <!--content start-->
