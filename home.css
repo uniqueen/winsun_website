@@ -274,28 +274,25 @@ body {
     list-style: none;
     height: 35px;
     margin: 0 auto;
+    border-bottom: 1px #ccc solid;
 }
 
 .nav-tabs li {
     height: 35px;
     width: 135px;
     background-color: #cacaca;
-    margin-right: 20px;
+    margin-right: 10px;
     float: left;
 }
+
 
 .nav-tabs li:hover {
     background-color: #1bc0c6;
 }
 
-.nav-tabs a:visited {
-    background-color: red;
-}
-
 .nav-tabs a {
     text-decoration: none;
     font-size: 18px;
-    text-align: center;
     line-height: 35px;
     display: block;
     color: #fff;
@@ -334,10 +331,19 @@ body {
     line-height: 24px;
     text-align: justify;
 }
-/*privacy-page end*/
-/*udisk-32start*/
-/*udisk-32 banner start*/
 
+.nav-tabs span {
+    text-decoration: none;
+    text-align: center;
+    line-height: 35px;
+    color: #333;
+    cursor: pointer;
+}
+
+/*privacy-page end*/
+
+
+/*udisk-32 banner start*/
 .udisk-banner {
     height: 490px;
     background-color: #e6f2f2;
@@ -390,14 +396,9 @@ body {
     display: block;
 }
 /*udisk-32 banner end*/
+
+
 /*udisk-32 nav start*/
-
-.tab-container1 {
-    width: 1003px;
-    margin: 0 auto;
-    margin-top: 55px;
-}
-
 .nav-tabs1 {
     list-style: none;
     height: 35px;
@@ -405,23 +406,35 @@ body {
     border-bottom: 1px #ccc solid;
 }
 
-.nav-tabs li {
-    /*    height: 35px;*/
-
-    margin-right: 80px;
+.nav-tabs1 li {
+    height: 35px;
+    width: 135px;
+    margin-right: 10px;
     float: left;
 }
 
-.nav-tabs span {
+.nav-tabs1 a {
     text-decoration: none;
     font-size: 18px;
     text-align: center;
     line-height: 35px;
     display: block;
+    color: #fff;
+}
+
+.tab-container1 {
+    width: 1003px;
+    margin: 0 auto;
+    margin-top: 55px;
+}
+
+.nav-tabs1 span {
+    text-decoration: none;
+    text-align: center;
+    line-height: 35px;
     color: #333;
     cursor: pointer;
 }
-/*äº§å“æ¦‚è¿°å¼€å§‹*/
 
 .product {
     text-align: center;
@@ -459,9 +472,10 @@ body {
     border-bottom: none;
     margin-bottom: 70px;
 }
-/*äº§å“æ¦‚è¿°ç»“æŸ*/
-/*ä¸‹è½½å¼€å§‹*/
+/*udisk-32 nav end*/
 
+
+/*download start*/
 .download ul {
     list-style: none;
     margin-bottom: 70px;
@@ -475,9 +489,10 @@ body {
     color: blue;
     font-size: 14px;
 }
-/*ä¸‹è½½ç»“æŸ*/
-/*äº§å“å›¾ç‰‡å¼€å§‹*/
+/*download end*/
 
+
+/*product-pic start*/
 .product-pic li {
     width: 500px;
     height: 500px;
@@ -488,6 +503,4 @@ body {
 .product-pic ul {
     list-style: none;
 }
-/*äº§å“å›¾ç‰‡ç»“æŸ*/
-/*udisk-32 nav end*/
-/*udisk-32 end*/
+/*product-pic end*/

@@ -6,17 +6,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>法律</title>
     <link rel="stylesheet" href="home.css">
-    <script src="js/lib/jquery-latest.min.js"></script>
+   <script src="js/lib/jquery-latest.min.js"></script>
     <script src="js/lib/easytabs.min.js"></script>
     <script>
         jQuery(document).ready(function ($) {
-            $('#tab-container').easytabs();
+            $('.nav-tabs li:first-child').addClass('active-tab')
+            $('.tab-content-box .tab-content').css('display', 'none');
+            $('.tab-content-box .tab-content:first-child').css('display', 'block');
+            $('.nav-tabs li span').click(function () {
+                tabName = "." + $(this).attr('class');
+                console.log(tabName);
+                $('.nav-tabs li').removeClass('active-tab');
+                $(this).offsetParent().addClass('active-tab');
+//                $('.tab-content-box .tab-content').hide('fast');
+//                $('.tab-content-box').children(tabName).show('fast');
+                $('.tab-content-box .tab-content').css('display','none');
+                $('.tab-content-box').children(tabName).css('display','block');
+            });
         });
     </script>
 </head>
 
 <body>
-    <!-- header start-->
+       <!-- header start-->
     <div class="header">
         <div class="nav-content">
             <div class="logo">
@@ -29,10 +41,22 @@
                     <li><a href="">首页</a>
                     </li>
                     <li><a href="">产品信息</a>
-                        <ul class="subnav">
-                            <li>
+                        <div class="subnav">
+                            <i class="icon-subnav"><img src="images/subnav.jpg" alt=""></i>
+                            <ul>
+                                <li><a href="">技术类</a>
+                                    <img src="images/xbox.jpg" alt="">
+                                </li>
+                                <li><a href="">设计类</a>
+                                    <img src="images/suface.jpg" alt="">
+                                </li>
+                                <li><a href="">销售类</a>
+                                    <img src="" alt="">
+                                </li>
+                                <!--                             <li>
                                 <a href="">
-                                    <img src="images/jishu.jpg" </a>
+                                    <img src="images/jishu.jpg">
+                                </a>
                             </li>
                             <li>
                                 <a href="">
@@ -43,16 +67,29 @@
                                 <a href="">
                                     <img src="images/xiaoshou.jpg">
                                 </a>
-                            </li>
-                        </ul>
+                            </li> -->
+                            </ul>
+                        </div>
                     </li>
                     <li><a href="">技术支持</a>
                     </li>
                     <li><a href="">关于闻上</a>
-                        <ul class="subnav">
-                            <li>
+                        <div class="subnav">
+                            <i class="icon-subnav"><img src="images/subnav.jpg" alt=""></i>
+                            <ul>
+                                <li><a href="">技术类</a>
+                                    <img src="images/xbox.jpg" alt="">
+                                </li>
+                                <li><a href="">设计类</a>
+                                    <img src="images/suface.jpg" alt="">
+                                </li>
+                                <li><a href="">销售类</a>
+                                    <img src="" alt="">
+                                </li>
+                                <!--                             <li>
                                 <a href="">
-                                    <img src="images/jishu.jpg" </a>
+                                    <img src="images/jishu.jpg">
+                                </a>
                             </li>
                             <li>
                                 <a href="">
@@ -63,12 +100,10 @@
                                 <a href="">
                                     <img src="images/xiaoshou.jpg">
                                 </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="images/qita.jpg" </a>
-                            </li>
-                        </ul>
+                            </li> -->
+                            </ul>
+                        </div>
+
                     </li>
                     <li><a href="">招贤纳士</a>
                     </li>
@@ -82,15 +117,23 @@
     <!--tab start-->
     <div id="tab-container" class="tab-container">
         <ul class='nav-tabs'>
+             <li class='tab'><span class="front">网站使用条款</span>
+            </li>
+              <li class='tab'><span class="tradition">隐私保护政策</span>
+            </li>  <li class='tab'><span class="new">产品保修条款</span>
+            </li>
+<!--
             <li class='tab'><a href="#front">网站使用条款</a>
             </li>
             <li class='tab'><a href="#tradition">隐私保护政策</a>
             </li>
             <li class='tab'><a href="#new">产品保修条款</a>
             </li>
+-->
         </ul>
+        <div class="tab-content-box">
         <!--网站使用条款开始-->
-        <div id="front">
+            <div class="front tab-content">
             <h3>上海闻上信息科技有限公司</h3>
             <h3>网站使用规定</h3>
             <p>这些使用规定 (以下称「网站规定」) 适用于存取和使用上海闻上信息科技有限公司(以下称「闻上科技」、「我们」或「我们的」) 网站，网址为 http://www.winsuntech.cn (以下称「网站」)。 当您开始使用本网站表示您已明确阅读且接受本网站使用条款。本网站有权随时修改本使用条款，并且强烈建议您留意任何修改或更新，而您持续使用本网站表示您已明确阅读且同意该修改或更新。若您不同意本网站使用条款或所在的国家或地区排除适用全部或部份本网站使用条款，请您勿使用本网站。
@@ -156,9 +199,9 @@
             <h3>9. 问题与联络信息</h3>
             <p>如果您需要有关版权的许可或有任何问题，请联系闻上科技。</p>
             <!--网站使用条款结束-->
-            <!--隐私保护政策开始-->
         </div>
-        <div id="tradition">
+            <!--隐私保护政策开始-->
+    <div class="tradition tab-content">
             <h3>隐私声明</h3>
             <br>
             <p>上海闻上科技有限公司（以下简称闻上科技或我们）非常重视您的个人数据保护，并致力于保护您个人的隐私权以及您决定与我们分享的信息。因此制订了个人数据保护条例，让您可参考下列个人数据保护条例的内容。 请您仔细的阅读本条例，如您不同意闻上科技的个人数据保护条例，请不要继续使用或浏览本网站，否则即表示您已阅读、了解并同意接受闻上科技的个人数据保护条例。如有任何问题或建议，欢迎您随时与闻上科技联系。
@@ -203,11 +246,10 @@
             <p>+86 21 3319 9889</p>
              <p>Marketing@winsuntech.cn</p>
 
-        </div>
         <!--隐私保护政策结束-->
-
+</div>
 <!--产品保修条款开始-->
-        <div id="new">
+    <div class="new tab-content">
             <p>上海闻上信息科技有限公司对自2015年3月19日起售出的不同产品实行相应的质保服务政策：</p>
             <p>移动存储（U盘）产品14天包换、三年质保</p>
             <p>网络存储（NAS）产品14天包换、一年质保</p>
@@ -233,7 +275,9 @@
             <p>6）未依操作手册使用或未依使用说明书上的指示维护所导致的故障损坏；</p>
             <br>
             <p>以上条款的最终解释权归属上海闻上信息科技有限公司，如有变更，如有变更请参见 www.winsuntech.cn的通知。</p>
-        </div>
+
+    </div>
+</div>
 <!--产品保修条款结束-->
     </div>
     <!--tab end-->

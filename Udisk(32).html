@@ -10,16 +10,18 @@
     <script src="js/lib/easytabs.min.js"></script>
     <script>
         jQuery(document).ready(function ($) {
-            $('.nav-tabs li:first-child').addClass('active-tab')
+            $('.nav-tabs1 li:first-child').addClass('active-tab')
             $('.tab-content-box .tab-content').css('display', 'none');
             $('.tab-content-box .tab-content:first-child').css('display', 'block');
-            $('.nav-tabs li span').click(function () {
+            $('.nav-tabs1 li span').click(function () {
                 tabName = "." + $(this).attr('class');
                 console.log(tabName);
                 $('.nav-tabs li').removeClass('active-tab');
                 $(this).offsetParent().addClass('active-tab');
-                $('.tab-content-box .tab-content').hide('slow');
-                $('.tab-content-box').children(tabName).show('slow');
+//                $('.tab-content-box .tab-content').hide('slow');
+//                $('.tab-content-box').children(tabName).show('slow');
+                 $('.tab-content-box .tab-content').css('display','none');
+                $('.tab-content-box').children(tabName).css('display','block');
             });
         });
     </script>
@@ -42,11 +44,14 @@
                         <div class="subnav">
                             <i class="icon-subnav"><img src="images/subnav.jpg" alt=""></i>
                             <ul>
-                                <li><a href="">技术类</a><img src="images/xbox.jpg" alt="">
+                                <li><a href="">技术类</a>
+                                    <img src="images/xbox.jpg" alt="">
                                 </li>
-                                <li><a href="">设计类</a><img src="images/suface.jpg" alt="">
+                                <li><a href="">设计类</a>
+                                    <img src="images/suface.jpg" alt="">
                                 </li>
-                                <li><a href="">销售类</a><img src="" alt="">
+                                <li><a href="">销售类</a>
+                                    <img src="" alt="">
                                 </li>
                                 <!--                             <li>
                                 <a href="">
@@ -72,11 +77,14 @@
                         <div class="subnav">
                             <i class="icon-subnav"><img src="images/subnav.jpg" alt=""></i>
                             <ul>
-                                <li><a href="">技术类</a><img src="images/xbox.jpg" alt="">
+                                <li><a href="">技术类</a>
+                                    <img src="images/xbox.jpg" alt="">
                                 </li>
-                                <li><a href="">设计类</a><img src="images/suface.jpg" alt="">
+                                <li><a href="">设计类</a>
+                                    <img src="images/suface.jpg" alt="">
                                 </li>
-                                <li><a href="">销售类</a><img src="" alt="">
+                                <li><a href="">销售类</a>
+                                    <img src="" alt="">
                                 </li>
                                 <!--                             <li>
                                 <a href="">
@@ -155,8 +163,8 @@
     </div>
     <!--    banner end-->
     <!--   content start -->
-    <div id="tab-container" class="tab-container">
-        <ul class='nav-tabs'>
+    <div id="tab-container1" class="tab-container1">
+        <ul class='nav-tabs1'>
             <li class='tab'><span class="product">产品概述</span>
             </li>
             <li class='tab'><span class="picture">产品图片</span>
@@ -207,13 +215,17 @@
             <div class="picture tab-content">
                 <div class="product-pic">
                     <ul>
-                        <li><img src="">
+                        <li>
+                            <img src="">
                         </li>
-                        <li><img src="">
+                        <li>
+                            <img src="">
                         </li>
-                        <li><img src="">
+                        <li>
+                            <img src="">
                         </li>
-                        <li><img src="">
+                        <li>
+                            <img src="">
                         </li>
                     </ul>
                 </div>
