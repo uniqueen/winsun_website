@@ -9,9 +9,19 @@
     <script src="js/lib/jquery-latest.min.js"></script>
     <script src="js/lib/easytabs.min.js"></script>
     <script>
-        jQuery(document).ready(function ($) {
-            $('#tab-container1').easytabs();
+    jQuery(document).ready(function($) {
+        $('.nav-tabs li:first-child').addClass('active-tab')
+        $('.tab-content-box .tab-content').css('display', 'none');
+        $('.tab-content-box .tab-content:first-child').css('display', 'block');
+        $('.nav-tabs li span').click(function() {
+            tabName = "." + $(this).attr('class');
+            console.log(tabName);
+            $('.nav-tabs li').removeClass('active-tab');
+            $(this).offsetParent().addClass('active-tab');
+            $('.tab-content-box .tab-content').hide('slow');
+            $('.tab-content-box').children(tabName).show('slow');
         });
+    });
     </script>
 </head>
 
@@ -128,86 +138,85 @@
     </div>
     <!--    banner end-->
     <!--   content start -->
-    <div id="tab-container1" class="tab-container1">
-        <ul class='nav-tabs1'>
-            <li class='tab'><a href="#product">产品概述</a>
+    <div id="tab-container" class="tab-container">
+        <ul class='nav-tabs'>
+            <li class='tab'><span class="product">产品概述</span>
             </li>
-            <li class='tab'><a href="#picture">产品图片</a>
+            <li class='tab'><span class="picture">产品图片</span>
             </li>
-            <li class='tab'><a href="#parameter">参数规格</a>
+            <li class='tab'><span class="parameter">参数规格</span>
             </li>
-            <li class='tab'><a href="#problem">常见问题</a>
+            <li class='tab'><span class="problem">常见问题</span>
             </li>
-            <li class='tab'><a href="#download">相关下载</a>
+            <li class='tab'><span class="download">相关下载</span>
             </li>
         </ul>
-
-        <!--产品概述开始-->
-        <div id="product">
-            <h1>手机/电脑两用U盘</h1>
-            <h3>一体两用 跨界通行</h3>
-            <p>15U032M+1是双USB接口设计，打破了WIFI的环境限制，告别了蓝牙传输的漫长等待，一插一拔，迅速完成不同终端设备之间的数据共享。分享时刻，你只需要把它交给朋友，插入手机或者平板电脑，简单的复制粘贴，瞬间分享海量照片、音乐与视频！</p>
-            <div class="udisk-image">
-                <img src="images/shuangchatou.jpg">
+        <div class="tab-content-box">
+            <!--产品概述开始-->
+            <div class="product tab-content">
+                <h1>手机/电脑两用U盘</h1>
+                <h3>一体两用 跨界通行</h3>
+                <p>15U032M+1是双USB接口设计，打破了WIFI的环境限制，告别了蓝牙传输的漫长等待，一插一拔，迅速完成不同终端设备之间的数据共享。分享时刻，你只需要把它交给朋友，插入手机或者平板电脑，简单的复制粘贴，瞬间分享海量照片、音乐与视频！</p>
+                <div class="udisk-image">
+                    <img src="images/shuangchatou.jpg">
+                </div>
+                <h1>极致工艺 超凡脱俗</h1>
+                <h3>色彩与金属的结合</h3>
+                <p>独具匠心的伸缩式接口设计，可以双向滑动。你只需要用双指轻捏盖帽上的防滑纹，再将机身向前推可立现Micro USB接口，向后拉则将其隐藏。这样的人性化设计，不仅能有效保护接口，更可以避免盖帽丢失。重要的是，操作步骤也变得更简单，使用起来也更方便</p>
+                <div class="udisk-image">
+                    <img src="images/caizhi.jpg">
+                </div>
+                <h1>安全专家</h1>
+                <h3>给移动数据找一个安全的家</h3>
+                <p>稳定存储技术，有效防止数据丢失，符合U-SAFE标准，打造安全可靠的存储环境；InforCube移动数据保险箱采用AES256位加密算法，防止内部信息外泄，兼容Windows7、Windows8有效保护您的数据安全！</p>
+                <div class="udisk-image">
+                    <img src="images/jiami.jpg">
+                </div>
+                <h1>数据极速传输</h1>
+                <h3>USB3.0更快更高速</h3>
+                <p>15U032M+1搭载USB3.0接口，完全符合主流电脑的标准配置。您的Office文档、图片、音乐、视频等文件，都可以由它来妥善保管。从传输到存储，一起都以超高速进行。它向下兼容USB2.0接口，甚至传输速度有10倍的提升！</p>
+                <div class="udisk-image">
+                    <img src="images/sudu1.jpg">
+                </div>
+                <h1>数据极速传输</h1>
+                <h3>USB3.0更快更高速</h3>
+                <p>15U032M+1搭载USB3.0接口，完全符合主流电脑的标准配置。您的Office文档、图片、音乐、视频等文件，都可以由它来妥善保管。从传输到存储，一起都以超高速进行。它向下兼容USB2.0接口，甚至传输速度有10倍的提升！</p>
+                <div class="udisk-image">
+                    <img src="images/qing.jpg">
+                </div>
             </div>
-            <h1>极致工艺 超凡脱俗</h1>
-            <h3>色彩与金属的结合</h3>
-            <p>独具匠心的伸缩式接口设计，可以双向滑动。你只需要用双指轻捏盖帽上的防滑纹，再将机身向前推可立现Micro USB接口，向后拉则将其隐藏。这样的人性化设计，不仅能有效保护接口，更可以避免盖帽丢失。重要的是，操作步骤也变得更简单，使用起来也更方便</p>
-            <div class="udisk-image">
-                <img src="images/caizhi.jpg">
+            <!--产品概述结束-->
+            <!--产品图片开始-->
+            <div class="picture tab-content">
+                <div class="product-pic">
+                    <ul>
+                        <li><img src=""></li>
+                        <li><img src=""></li>
+                        <li><img src=""></li>
+                        <li><img src=""></li>
+                    </ul>
+                </div>
             </div>
-            <h1>安全专家</h1>
-            <h3>给移动数据找一个安全的家</h3>
-            <p>稳定存储技术，有效防止数据丢失，符合U-SAFE标准，打造安全可靠的存储环境；InforCube移动数据保险箱采用AES256位加密算法，防止内部信息外泄，兼容Windows7、Windows8有效保护您的数据安全！</p>
-            <div class="udisk-image">
-                <img src="images/jiami.jpg">
+            <!--产品图片结束 -->
+            <!--规格参数开始-->
+            <div class="parameter tab-content">
+                3
             </div>
-            <h1>数据极速传输</h1>
-            <h3>USB3.0更快更高速</h3>
-            <p>15U032M+1搭载USB3.0接口，完全符合主流电脑的标准配置。您的Office文档、图片、音乐、视频等文件，都可以由它来妥善保管。从传输到存储，一起都以超高速进行。它向下兼容USB2.0接口，甚至传输速度有10倍的提升！</p>
-            <div class="udisk-image">
-                <img src="images/sudu1.jpg">
+            <!--规格参数结束-->
+            <div class="problem tab-content">
+                4
             </div>
-            <h1>数据极速传输</h1>
-            <h3>USB3.0更快更高速</h3>
-            <p>15U032M+1搭载USB3.0接口，完全符合主流电脑的标准配置。您的Office文档、图片、音乐、视频等文件，都可以由它来妥善保管。从传输到存储，一起都以超高速进行。它向下兼容USB2.0接口，甚至传输速度有10倍的提升！</p>
-            <div class="udisk-image">
-                <img src="images/qing.jpg">
-            </div>
-        </div>
-        <!--产品概述结束-->
-
-        <!--产品图片开始-->
-        <div id="picture">
-            <div class="product-pic">
-               <ul>
-                    <li><img src=""></li>
-                   <li><img src=""></li>
-                   <li><img src=""></li>
-                   <li><img src=""></li>
+            <!--下载中心开始 -->
+            <div class="download tab-content">
+                <ul>
+                    <li><a href="">移动数据保险箱秘钥下载</a>
+                    </li>
+                    <li><a href="">移动数据保险箱使用说明书</a>
+                    </li>
                 </ul>
             </div>
+            <!--下载结束-->
         </div>
-        <!--产品图片结束 -->
-
-        <!--规格参数开始-->
-        <div id="parameter">
-            3
-        </div>
-        <!--规格参数结束-->
-        <div id="problem">
-            4
-        </div>
-        <!--下载中心开始 -->
-        <div id="download">
-            <ul>
-                <li><a href="">移动数据保险箱秘钥下载</a>
-                </li>
-                <li><a href="">移动数据保险箱使用说明书</a>
-                </li>
-            </ul>
-        </div>
-        <!--下载结束-->
     </div>
     <!--content end-->
     <!--footer start-->

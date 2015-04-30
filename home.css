@@ -1,14 +1,14 @@
-*{
+* {
     padding: 0;
     margin: 0;
     border: none;
 }
 
 body {
-    font-family: 微软雅黑;
+    font-family: å¾®è½¯é›…é»‘;
 }
-
 /*hearder start*/
+
 .header {
     height: 90px;
 }
@@ -41,9 +41,11 @@ body {
 
 .nav a {
     text-decoration: none;
-    display: block;
+    display: inline-block;
+    margin-top: 36px;
+    padding-bottom: 36px;
     text-align: center;
-    line-height: 90px;
+    line-height: 18px;
     font-size: 18px;
     color: #000;
 }
@@ -54,29 +56,74 @@ body {
 
 .subnav {
     position: absolute;
-    width: 575px;
-/*    top: 63px;*/
+    /*    top: 63px;*/
+
     display: none;
-    background-color: #fff;
-    height: 120px;
+    margin-left: -200px;
+    height: 320px;
+    width: 650px;
     z-index: 1;
+    border: 1px solid #d1d1d1;
+    background-color: #fff;
+}
+
+.icon-subnav {
+    position: absolute;
+    top: -25px;
+    left: 210px;
+}
+
+.subnav ul {
+    border-right: 1px solid #d1d1d1;
+    width: 150px;
+    height: 280px
 }
 
 .subnav li {
-    float: left;
-    margin-right: 56px;
+    padding: 0;
+    margin: 0;
+    float: none;
+    height: auto;
+    width: 150px;
 }
 
-.subnav li:first-child {
-    margin-left: 66px;
+.subnav ul a {
+    border: none!important;
+    display: block;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0;
+    text-align: left;
+}
+
+.subnav ul a:hover {
+    background: green;
+    color: #ffffff
+}
+
+.subnav li img {
+    display: none;
+    position: absolute;
+    left: 170px;
+    top: 0;
+}
+
+.subnav li:first-child img {
+    display: block;
 }
 
 .nav li:hover .subnav {
     display: block;
 }
+
+.subnav li:hover img {
+    display: block;
+}
 /*header end*/
 /*banner start*/
-.banner  {
+
+.banner {
     width: 100% !important;
     position: relative;
     overflow: hidden;
@@ -86,6 +133,7 @@ body {
     float: left;
     list-style: none;
 }
+
 .banner ul li img {
     width: 100%;
     height: auto;
@@ -122,6 +170,7 @@ body {
 }
 /*banner end*/
 /*footer start*/
+
 .footer {
     height: 120px;
     margin: 0 auto;
@@ -131,10 +180,10 @@ body {
 .footer {
     width: 100%
 }
-.footer  {
+
+.footer {
     width: 1000px;
     margin: 0 auto
-
 }
 
 .foot_left {
@@ -171,6 +220,7 @@ body {
     color: #333;
     font-size: 14px;
 }
+
 .copyright {
     font-size: 14px;
     color: #747474;
@@ -189,7 +239,6 @@ body {
     float: left;
     margin-right: 12px;
 }
-
 
 .foot_right li:last-child {
     margin-top: 10px;
@@ -212,15 +261,9 @@ body {
     height: 69px;
     margin-top: -70px;
 }
-
-
 /*footer end*/
-
-
-
-
-
 /*privacy-page start*/
+
 .tab-container {
     width: 1003px;
     margin: 0 auto;
@@ -258,6 +301,10 @@ body {
     color: #fff;
 }
 
+.active-tab-content {
+    display: block;
+}
+
 #front {
     width: 1003px;
     height: auto;
@@ -279,7 +326,7 @@ body {
 }
 
 #new {
-         width: 1003px;
+    width: 1003px;
     height: auto;
     margin-top: 50px;
     font-size: 15px;
@@ -288,13 +335,9 @@ body {
     text-align: justify;
 }
 /*privacy-page end*/
-
-
-
-
-
 /*udisk-32start*/
 /*udisk-32 banner start*/
+
 .udisk-banner {
     height: 490px;
     background-color: #e6f2f2;
@@ -318,12 +361,12 @@ body {
 }
 
 .rongliang li {
-   float: left;
-   width: 112px;
-   height: 42px;
-   border: 2px #fff solid;
-   margin-right: 20px;
-   margin-top: 20px;
+    float: left;
+    width: 112px;
+    height: 42px;
+    border: 2px #fff solid;
+    margin-right: 20px;
+    margin-top: 20px;
 }
 
 .color li {
@@ -336,20 +379,19 @@ body {
 }
 
 .udisk-right ul {
-    list-style:none;
-
+    list-style: none;
 }
 
 .udisk-right a {
-    text-decoration:none;
+    text-decoration: none;
     font-size: 18px;
     text-align: center;
     line-height: 42px;
     display: block;
 }
 /*udisk-32 banner end*/
-
 /*udisk-32 nav start*/
+
 .tab-container1 {
     width: 1003px;
     margin: 0 auto;
@@ -364,7 +406,8 @@ body {
 }
 
 .nav-tabs1 li {
-/*    height: 35px;*/
+    /*    height: 35px;*/
+
     margin-right: 80px;
     float: left;
 }
@@ -377,7 +420,8 @@ body {
     display: block;
     color: #333;
 }
-/*产品概述开始*/
+/*äº§å“æ¦‚è¿°å¼€å§‹*/
+
 #product {
     text-align: center;
     margin-top: 50px;
@@ -400,7 +444,7 @@ body {
     color: #999;
 }
 
-#product img{
+#product img {
     margin: 0 auto;
 }
 
@@ -414,9 +458,9 @@ body {
     border-bottom: none;
     margin-bottom: 70px;
 }
-/*产品概述结束*/
+/*äº§å“æ¦‚è¿°ç»“æŸ*/
+/*ä¸‹è½½å¼€å§‹*/
 
-/*下载开始*/
 #download ul {
     list-style: none;
     margin-bottom: 70px;
@@ -430,9 +474,9 @@ body {
     color: blue;
     font-size: 14px;
 }
-/*下载结束*/
+/*ä¸‹è½½ç»“æŸ*/
+/*äº§å“å›¾ç‰‡å¼€å§‹*/
 
-/*产品图片开始*/
 .product-pic li {
     width: 500px;
     height: 500px;
@@ -443,7 +487,6 @@ body {
 .product-pic ul {
     list-style: none;
 }
-/*产品图片结束*/
-
+/*äº§å“å›¾ç‰‡ç»“æŸ*/
 /*udisk-32 nav end*/
 /*udisk-32 end*/
