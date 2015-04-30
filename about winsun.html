@@ -7,8 +7,24 @@
     <title>关于闻上</title>
     <link rel="stylesheet" href="home.css">
     <script src="js/lib/jquery-latest.min.js"></script>
-    <script src="js/lib/unslider.js"></script>
-    <script src="js/functions.js"></script>
+    <script src="js/lib/easytabs.min.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            $('.nav-tabs li:first-child').addClass('active-tab')
+            $('.tab-content-box .tab-content').css('display', 'none');
+            $('.tab-content-box .tab-content:first-child').css('display', 'block');
+            $('.nav-tabs li span').click(function () {
+                tabName = "." + $(this).attr('class');
+                console.log(tabName);
+                $('.nav-tabs li').removeClass('active-tab');
+                $(this).offsetParent().addClass('active-tab');
+                //                $('.tab-content-box .tab-content').hide('fast');
+                //                $('.tab-content-box').children(tabName).show('fast');
+                $('.tab-content-box .tab-content').css('display', 'none');
+                $('.tab-content-box').children(tabName).css('display', 'block');
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -70,7 +86,21 @@
                                 <li><a href="">销售类</a>
                                     <img src="" alt="">
                                 </li>
-
+                                <!--                             <li>
+                                <a href="">
+                                    <img src="images/jishu.jpg">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="images/sheji.jpg">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="images/xiaoshou.jpg">
+                                </a>
+                            </li> -->
                             </ul>
                         </div>
 
@@ -93,27 +123,27 @@
             </li>
             <li class='tab'><span class="cultural">企业文化</span>
             </li>
-            <li class='tab'><span class="contact">企业文化</span>
+             <li class='tab'><span class="contact">企业文化</span>
             </li>
         </ul>
         <div class="tab-content-box">
 
             <div class="mission tab-content">
-                1
+               1
             </div>
 
             <div class="road tab-content">
-                2
+2
             </div>
-
+  
             <div class="cultural tab-content">
-                3
+3
             </div>
-            <div class="contact tab-content">
-                4
+              <div class="contact tab-content">
+4
             </div>
         </div>
-
+  
     </div>
     <!--tab end-->
     <!--content start-->

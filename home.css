@@ -112,7 +112,7 @@ body {
 }
 
 .nav li:hover .subnav {
-    /*display: block;*/
+    display: block;
 }
 
 .subnav li:hover img {
@@ -420,21 +420,21 @@ body {
 
 
 /*udisk-32 nav start*/
-.nav-tabs {
+.nav-tabs1 {
     list-style: none;
     height: 35px;
     margin: 0 auto;
     border-bottom: 1px #ccc solid;
 }
 
-.nav-tabs li {
+.nav-tabs1 li {
     height: 35px;
     width: 135px;
     margin-right: 10px;
     float: left;
 }
 
-.nav-tabs a {
+.nav-tabs1 a {
     text-decoration: none;
     font-size: 18px;
     text-align: center;
@@ -443,13 +443,13 @@ body {
     color: #fff;
 }
 
-.tab-container {
+.tab-container1 {
     width: 1003px;
     margin: 0 auto;
     margin-top: 55px;
 }
 
-.nav-tabs span {
+.nav-tabs1 span {
     text-decoration: none;
     text-align: center;
     line-height: 35px;
